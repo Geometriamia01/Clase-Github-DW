@@ -1,0 +1,185 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+.lista-header {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.lista-header #esquinar {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.lista-header li {
+    list-style-type: none;
+    display: inline;
+    margin: 6px;
+    transition: all 0.6s;
+}
+
+.lista-header li:hover {
+    transform: scale(2);
+}
+
+.idiomas {
+    display: flex;
+    margin: 0.9%;
+    padding: 0%;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0mm;
+    left: 1275px;
+}
+
+.idiomas li {
+    list-style-type: none;
+    margin: 6px;
+    transition: all 0.6s;
+}
+
+.idiomas li:hover {
+    transform: scale(2);
+}
+
+/* PRIMERA PARTE: MENU */
+.primerContenedor {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.primerContenedor video {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    font-family: 'Kaisei Opti', serif;
+    font-size: 40px;
+    position: relative;
+    color: white;
+}
+
+#botonWhatsapp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+}
+
+/* SECCION UNO: BIO */
+#seccion-uno {
+    margin: 10%;
+    padding: 10%;
+}
+
+.seccion-bio h2 {
+    font-family: 'kaisei Opti', serif;
+    font-size: 100px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.seccion-bio p {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+}
+
+/* SECCION DOS: TRABAJOS REALIZADOS */
+#seccion-dos {
+    margin: 0%;
+    padding: 0%;
+    background-color: black;
+}
+
+.seccion-trabajos {
+    margin: 10%;
+    padding: 10%;
+    display: grid;  
+    grid-template-columns: 1fr auto auto auto; 
+    justify-content: space-evenly;
+}
+
+@media(min-width:100px) {
+    .seccion-dos {
+        grid-template-columns: min-content;
+    }
+}
+
+.seccion-trabajos div {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 25px;
+    list-style-type: none;  
+    border: 1px black solid;
+    display: grid;
+}
+
+.seccion-trabajos a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+.seccion-trabajos img {
+    margin: 8%;
+    padding: 8%;
+}
+
+/* SECCION HERRAMIENTAS - BOOTSTRAP */
+#seccion-tres {
+    margin: 10%;
+    padding: 10%;
+}
+
+/* FINAL DE PAGINA */
+.lista-footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10%;  
+    background-color: black;
+}
+
+.lista-footer li {
+    margin: 6px;
+    background-color: white;
+    display: inline;
+    list-style-type: none;
+    transition: all 0.6s;
+}
+
+.lista-footer li:hover {
+    transform: scale(2);
+}
+
+
+
